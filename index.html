@@ -304,7 +304,29 @@
           </ol>
         </section>
       </section>
-      <section class="portfolio" id="main-portfolio">Портфолио</section>
+      <section class="portfolio" id="main-portfolio">
+        <h2>Портфолио</h2>
+        <!-- откорректировать под себя -->
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <div class="product-card">
+          <a class="product-card-link" href="product.html">
+            <img class="product-card-image" src="#" alt="" />
+            <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
+          </a>
+          <b class="product-card-price">744 ₽</b>
+          <a class="product-card-button button" href="#">Купить</a>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>

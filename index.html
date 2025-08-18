@@ -7,9 +7,10 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <!--Хэдер изменить на якорные ссылки-->
     <header class="page-header">
-<img class="page-header-logo" src="images/logo.jpg" alt="Логотип">
+      <a class="page-header-logo-link" href="index.html"
+        ><img class="page-header-logo" src="images/logo.jpg" alt="Логотип"
+      /></a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -29,20 +30,23 @@
     </header>
     <main>
       <section class="about" id="main-about">
-        <img
-          src="images/avatar.jpg"
-          alt="Набиуллина Валерия"
-          class="img_con"
-        />
-<p>
-Меня зовут Вслерия, я Junior Frontend Developer из Самары. Владею базовыми знаниями HTML, CSS и JavaScript, стремлюсь постоянно повышать свою квалификацию и углублять профессиональные компетенции.
-</p>
-<p>
-У меня двое детей, поэтому переезд и длительные командировки невозможны. Тем не менее открыта для участия в перспективных проектах и стартапех удаленно либо в формате частичной занятости.
-</p>
-<p>
-Моя цель — стать Fullstack-разработчиком, осваивая технологии бэкенда параллельно с фронтендом. Планирую поднять уровень английского языка до C1 для расширения возможностей профессионального роста и работы над международными проектами.
-</p>
+        <img src="images/avatar.jpg" alt="Набиуллина Валерия" class="img_con" />
+        <p>
+          Меня зовут Вслерия, я Junior Frontend Developer из Самары. Владею
+          базовыми знаниями HTML, CSS и JavaScript, стремлюсь постоянно повышать
+          свою квалификацию и углублять профессиональные компетенции.
+        </p>
+        <p>
+          У меня двое детей, поэтому переезд и длительные командировки
+          невозможны. Тем не менее открыта для участия в перспективных проектах
+          и стартапех удаленно либо в формате частичной занятости.
+        </p>
+        <p>
+          Моя цель — стать Fullstack-разработчиком, осваивая технологии бэкенда
+          параллельно с фронтендом. Планирую поднять уровень английского языка
+          до C1 для расширения возможностей профессионального роста и работы над
+          международными проектами.
+        </p>
       </section>
       <section class="contacts">
         <p>
@@ -84,7 +88,7 @@
           </li>
         </ul>
       </section>
-      <section class="skills" id="main-skills"> <!-- добавить в навигацию? -->
+      <section class="skills">
         <h2>Навыки</h2>
         <p>
           Меня вдохновляет возможность создавать великие произведения вместе с
@@ -127,6 +131,27 @@
           Мой ориентир в изучении:
           <a href="frontend, roadmap.pdf" target="_blank">RoadMap</a>
         </p>
+      </section>
+      <section class="education" id="main-education">
+        <h1>Образовавание</h1>
+        <table class="educateTabl">
+          <thead>
+            <th>Год выпуска</th>
+            <th>ВУЗ</th>
+            <th>Факультет</th>
+            <th>Специальность</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021, неоконченное высшее</td>
+              <td>ПГУТИ</td>
+              <td>
+                Факультет информационных систем и технологий (2 факультет)
+              </td>
+              <td>Программная инженерия</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <section class="experience" id="main-exp">
         <h1>Опыт работы</h1>
@@ -207,75 +232,55 @@
           </tbody>
         </table>
       </section>
-      <section class="education" id="main-education">
-        <h1>Образовавание</h1>
-        <table class="educateTabl">
-          <thead>
-            <th>Год выпуска</th>
-            <th>ВУЗ</th>
-            <th>Факультет</th>
-            <th>Специальность</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2021, неоконченное высшее</td>
-              <td>ПГУТИ</td>
-              <td>
-                Факультет информационных систем и технологий (2 факультет)
-              </td>
-              <td>Программная инженерия</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="certificates">
-          <h1 class="gallery-title">Сертификаты, дипломы</h1>
-          <section class="gallery">
-            <img class="slider-image" src="#" alt="Сертификаты" />
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
+      <section class="education certificates">
+        <h1 class="gallery-title">Сертификаты, дипломы</h1>
+        <section class="gallery">
+          <img class="slider-image" src="#" alt="Сертификаты" />
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
 
-            <ol class="slider-division">
-              <li class="slider-division-item">
-                <button
-                  class="slider-division-button slider-division-button-current"
-                  type="button"
-                >
-                  <span class="visually-hidden"
-                    ><img src="" alt="Frontend Developer"
-                  /></span>
-                </button>
-              </li>
-              <li class="slider-division-item">
-                <button
-                  class="slider-division-button slider-division-button-current"
-                  type="button"
-                >
-                  <span class="visually-hidden"
-                    ><img src="images/stepik_cert_JS.jpg" alt="JavaScript"
-                  /></span>
-                </button>
-              </li>
-              <li class="slider-division-item">
-                <button
-                  class="slider-division-button slider-division-button-current"
-                  type="button"
-                >
-                  <span class="visually-hidden"
-                    ><img
-                      src="images/stepik_cer_HTML_beginner.jpg"
-                      alt="HTML, CSS"
-                  /></span>
-                </button>
-              </li>
-            </ol>
-          </section>
-        </div>
+          <ol class="slider-division">
+            <li class="slider-division-item">
+              <button
+                class="slider-division-button slider-division-button-current"
+                type="button"
+              >
+                <span class="visually-hidden"
+                  ><img src="" alt="Frontend Developer"
+                /></span>
+              </button>
+            </li>
+            <li class="slider-division-item">
+              <button
+                class="slider-division-button slider-division-button-current"
+                type="button"
+              >
+                <span class="visually-hidden"
+                  ><img src="images/stepik_cert_JS.jpg" alt="JavaScript"
+                /></span>
+              </button>
+            </li>
+            <li class="slider-division-item">
+              <button
+                class="slider-division-button slider-division-button-current"
+                type="button"
+              >
+                <span class="visually-hidden"
+                  ><img
+                    src="images/stepik_cer_HTML_beginner.jpg"
+                    alt="HTML, CSS"
+                /></span>
+              </button>
+            </li>
+          </ol>
+        </section>
       </section>
-      <section class="portfolio" id="main-portfolio"></section>
+      <section class="portfolio" id="main-portfolio">Портфолио</section>
     </main>
+    <footer></footer>
   </body>
 </html>

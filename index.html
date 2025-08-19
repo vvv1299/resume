@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>Резюме</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="main.js"></script>
   </head>
   <body>
     <header class="page-header">
+      <!--Переделать лого в .svg https://image.online-convert.com/ru/convert-to-svg-->
       <a class="page-header-logo-link" href="index.html"
-        ><img class="page-header-logo" src="images/logo.jpg" alt="Логотип"
+        ><img
+          class="page-header-logo"
+          src="images/logo.jpg"
+          width="150"
+          alt="Логотип"
       /></a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -30,7 +35,12 @@
     </header>
     <main>
       <section class="about" id="main-about">
-        <img src="images/avatar.jpg" alt="Набиуллина Валерия" class="img_con" />
+        <img
+          src="images/avatar.jpg"
+          alt="Набиуллина Валерия"
+          height="350"
+          class="img_con"
+        />
         <p>
           Меня зовут Вслерия, я Junior Frontend Developer из Самары. Владею
           базовыми знаниями HTML, CSS и JavaScript, стремлюсь постоянно повышать
@@ -154,7 +164,7 @@
         </article>
         <p>
           Мой ориентир в изучении:
-          <a href="frontend, roadmap.pdf" target="_blank">RoadMap</a>
+          <a href="files/frontend, roadmap.pdf" target="_blank">RoadMap</a>
         </p>
       </section>
       <section class="education" id="main-education">
@@ -177,6 +187,57 @@
             </tr>
           </tbody>
         </table>
+      </section>
+      <section class="education certificates">
+        <h1 class="gallery-title">Сертификаты, дипломы</h1>
+        <section class="gallery">
+          <img class="slider-image" src="#" alt="Сертификаты" />
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+
+          <ol class="slider-division">
+            <li class="slider-division-item">
+              <button
+                class="slider-division-button slider-division-button-current"
+                type="button"
+              >
+                <span class="visually-hidden"
+                  ><img src="" width="600" alt="Frontend Developer"
+                /></span>
+              </button>
+            </li>
+            <li class="slider-division-item">
+              <button
+                class="slider-division-button slider-division-button-current"
+                type="button"
+              >
+                <span class="visually-hidden"
+                  ><img
+                    src="images/stepik_cert_JS.jpg"
+                    width="600"
+                    alt="JavaScript"
+                /></span>
+              </button>
+            </li>
+            <li class="slider-division-item">
+              <button
+                class="slider-division-button slider-division-button-current"
+                type="button"
+              >
+                <span class="visually-hidden"
+                  ><img
+                    src="images/stepik_cer_HTML_beginner.jpg"
+                    width="600"
+                    alt="HTML, CSS"
+                /></span>
+              </button>
+            </li>
+          </ol>
+        </section>
       </section>
       <section class="experience" id="main-exp">
         <h1>Опыт работы</h1>
@@ -257,60 +318,11 @@
           </tbody>
         </table>
       </section>
-      <section class="education certificates">
-        <h1 class="gallery-title">Сертификаты, дипломы</h1>
-        <section class="gallery">
-          <img class="slider-image" src="#" alt="Сертификаты" />
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-
-          <ol class="slider-division">
-            <li class="slider-division-item">
-              <button
-                class="slider-division-button slider-division-button-current"
-                type="button"
-              >
-                <span class="visually-hidden"
-                  ><img src="" alt="Frontend Developer"
-                /></span>
-              </button>
-            </li>
-            <li class="slider-division-item">
-              <button
-                class="slider-division-button slider-division-button-current"
-                type="button"
-              >
-                <span class="visually-hidden"
-                  ><img src="images/stepik_cert_JS.jpg" alt="JavaScript"
-                /></span>
-              </button>
-            </li>
-            <li class="slider-division-item">
-              <button
-                class="slider-division-button slider-division-button-current"
-                type="button"
-              >
-                <span class="visually-hidden"
-                  ><img
-                    src="images/stepik_cer_HTML_beginner.jpg"
-                    alt="HTML, CSS"
-                /></span>
-              </button>
-            </li>
-          </ol>
-        </section>
-      </section>
       <section class="portfolio" id="main-portfolio">
         <h2>Портфолио</h2>
-        <!-- откорректировать под себя -->
         <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
+          <option value="all">Все проекты</option>
+          <option value="frontend">Фронтенд</option>
         </select>
         <a href="#" class="button button-light">
           <span class="visually-hidden">Показать список</span>
@@ -318,62 +330,14 @@
         <a class="button" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <ul class="product-list">
-          <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="" />
-              <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
+        <ul class="portfolio-list">
+          <li class="portfolio-card">
+            <!--Додедать-->
+            <a class="portfolio-card-link" href="#">
+              <img class="portfolio-card-image" src="" alt="" />
+              <h3 class="portfolio-card-title">Поездка в Седону</h3>
             </a>
-            <b class="product-card-price">744 ₽</b>
-            <a class="product-card-button button" href="#">Купить</a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="" />
-              <h3 class="product-card-title">
-                Syoss шампунь Men Power &amp; Strength
-              </h3>
-            </a>
-            <b class="product-card-price">160 ₽</b>
-            <a class="product-card-button button" href="#">Купить</a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="" />
-              <h3 class="product-card-title">
-                Schauma шампунь для мужчин «Сила и объём с хмелем»
-              </h3>
-            </a>
-            <b class="product-card-price">94 ₽</b>
-            <a class="product-card-button button" href="#">Купить</a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="" />
-              <h3 class="product-card-title">
-                Nivea Men шампунь-уход «Экстремальная свежесть с ментолом»
-              </h3>
-            </a>
-            <b class="product-card-price">173 ₽</b>
-            <a class="product-card-button button" href="#">Купить</a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="" />
-              <h3 class="product-card-title">Шампунь Amplifier Thickening</h3>
-            </a>
-            <b class="product-card-price">441 ₽</b>
-            <a class="product-card-button button" href="#">Купить</a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="" />
-              <h3 class="product-card-title">
-                American Crew шампунь Anti-Dandruff
-              </h3>
-            </a>
-            <b class="product-card-price">904 ₽</b>
-            <a class="product-card-button button" href="#">Купить</a>
+            <b class="portfolio-card-data">Август 2025</b>
           </li>
         </ul>
 

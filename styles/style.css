@@ -1,49 +1,13 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
-  font-display: swap;
-}
-
 body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  line-height: 30px;
   background-color: #0f2b6c;
   color: #feceff;
+}
+
+a {
+  text-decoration: none;
 }
 
 .page-header-logo {
@@ -57,7 +21,7 @@ body {
 
 .navigation-link,
 .contacts-link {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Great Vibes", cursive;
   line-height: 20px;
   font-weight: 700;
   color: inherit;
@@ -67,4 +31,59 @@ body {
 
 .navigation-link {
   text-transform: uppercase;
+}
+
+.exp-job {
+  text-decoration: none;
+  color: #feceff;
+}
+
+.exp-job:hover {
+  color: #dbfafc;
+}
+
+.exp-job:visited {
+  color: inherit;
+}
+
+.skills dd {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  background-color: darkred;
+  width: 49%;
+}
+
+.skills-level {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2e67d0;
+}
+
+.skills-level-ok {
+  background-color: green;
+}
+
+.contacts-vk {
+  background-image: url("../images/svg/vk.svg");
+  background-repeat: no-repeat;
+  padding-top: 65px;
+}
+
+.contacts-wa {
+  background-image: url("../images/svg/whatsapp.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts-tlg {
+  background-image: url("../images/svg/telegram.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation-list,
+.soft-skills-list {
+  padding: 0;
+  list-style: none;
 }

@@ -1,16 +1,6 @@
-@font-face {
-    font-family: "Great Vibes";
-    src: url('GreatVibes-Regular.woff2') format('woff2'),
-        url('GreatVibes-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
 body {
-  font-family: "Great Vibes", cursive;
-  font-size: 30px;
+  font-family: "Gabriola", cursive;
+  font-size: 40px;
   line-height: 30px;
   background-color: #0f2b6c;
   color: #feceff;
@@ -31,7 +21,7 @@ a {
 
 .navigation-link,
 .contacts-link {
-  font-family: "Great Vibes", cursive;
+  font-family: "Gabriola", cursive;
   line-height: 20px;
   font-weight: 700;
   color: inherit;

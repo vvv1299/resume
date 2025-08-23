@@ -1,6 +1,6 @@
 body {
-  font-family: "Gabriola", cursive;
-  font-size: 40px;
+  font-family: "Times New Roman", cursive;
+  font-size: 30px;
   line-height: 30px;
   background-color: #0f2b6c;
   color: #feceff;
@@ -21,7 +21,7 @@ a {
 
 .navigation-link,
 .contacts-link {
-  font-family: "Gabriola", cursive;
+  font-family: "Times New Roman", cursive;
   line-height: 20px;
   font-weight: 700;
   color: inherit;

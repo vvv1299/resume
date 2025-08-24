@@ -67,7 +67,7 @@ a {
 }
 
 .contacts-vk {
-  background-image: url("../images/svg/vk.svg");
+  background-image: url("./images/svg/vk.svg");
   background-repeat: no-repeat;
   padding-top: 65px;
 }

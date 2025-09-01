@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <title>Резюме</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="main.js"></script>
   </head>
   <body>
     <header class="page-header">
-      <!--Переделать лого в .svg https://image.online-convert.com/ru/convert-to-svg-->
       <a class="page-header-logo-link" href="index.html"
         ><img
           class="page-header-logo"
-          src="images/logo.jpg"
+          src="images/svg/logo.svg"
           width="150"
           alt="Логотип"
       /></a>
@@ -35,6 +40,7 @@
     </header>
     <main>
       <section class="about" id="main-about">
+        <h1 class="visually-hidden">Junior Frontend Developer</h1>
         <img
           class="avatar"
           src="images/avatar.jpg"
@@ -73,28 +79,23 @@
         <a
           href="https://vk.com/voronvaleria"
           target="_blank"
-          class="visually-hidden contacts-vk"
+          class="contacts-vk"
         >
-<img src="images/svg/vk.svg" alt="ВКонтакте">
+          <img src="images/svg/vk.svg" alt="ВКонтакте" />
         </a>
-        <a
-          href="https://wa.me/79674800234"
-          target="_blank"
-          class="visually-hidden contacts-wa"
-        >
-            <img src="images/svg/wa.svg" alt="WhatsApp">
+        <a href="https://wa.me/79674800234" target="_blank" class="contacts-wa">
+          <img src="images/svg/whatsapp.svg" alt="WhatsApp" />
         </a>
         <a
           href="https://t.me/Valeria_Nabiullina"
           target="_blank"
-          class="visually-hidden contacts-tlg"
+          class="contacts-tlg"
         >
-<img src="images/svg/tlg.svg" alt="Telegram">
-          Telegram
+          <img src="images/svg/telegram.svg" alt="Telegram" />
         </a>
       </section>
       <section class="skills">
-        <h2>Навыки</h2>
+        <h2>Навыки, переделать согласно макету Figma</h2>
         <p>
           Меня вдохновляет возможность создавать великие произведения вместе с
           людьми, которые так же, как и я, стремятся построить что-то
@@ -258,9 +259,9 @@
                 class="slider-division-button slider-division-button-current"
                 type="button"
               >
-                <span class="visually-hidden"
-                  ><img src="" width="600" alt="Frontend Developer"
-                /></span>
+                <span>
+                  <img src="" width="600" alt="Frontend Developer" />
+                </span>
               </button>
             </li>
             <li class="slider-division-item">
@@ -268,12 +269,13 @@
                 class="slider-division-button slider-division-button-current"
                 type="button"
               >
-                <span class="visually-hidden"
-                  ><img
-                    src="/images/certificates/stepik_cert_JS.jpg"
+                <span>
+                  <img
+                    src="images/certificates/stepik_cert_JS.jpg"
                     width="600"
                     alt="JavaScript"
-                /></span>
+                  />
+                </span>
               </button>
             </li>
             <li class="slider-division-item">
@@ -281,12 +283,13 @@
                 class="slider-division-button slider-division-button-current"
                 type="button"
               >
-                <span class="visually-hidden"
-                  ><img
-                    src="/images/certificates/stepik_cer_HTML_beginner.jpg"
+                <span>
+                  <img
+                    src="images/certificates/stepik_cer_HTML_beginner.jpg"
                     width="600"
                     alt="HTML, CSS"
-                /></span>
+                  />
+                </span>
               </button>
             </li>
           </ol>
@@ -436,6 +439,37 @@
         </button>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <a class="page-header-logo-link" href="index.html"
+        ><img
+          class="page-header-logo"
+          src="images/svg/logo.svg"
+          width="150"
+          alt="Логотип"
+      /></a>
+      <div class="contacts-phone">
+        <p>Телефон:</p>
+        <a class="contacts-link" href="tel:+79674800234">+7 (967) 480-02-34</a>
+      </div>
+      <div class="contacts-email">
+        <p>E-mail:</p>
+        <a class="contacts-link" href="mailto:vvv1299@yandex.ru"
+          >vvv1299@yandex.ru</a
+        >
+      </div>
+      <a href="https://vk.com/voronvaleria" target="_blank" class="contacts-vk">
+        <img src="images/svg/vk.svg" alt="ВКонтакте" />
+      </a>
+      <a href="https://wa.me/79674800234" target="_blank" class="contacts-wa">
+        <img src="images/svg/whatsapp.svg" alt="WhatsApp" />
+      </a>
+      <a
+        href="https://t.me/Valeria_Nabiullina"
+        target="_blank"
+        class="contacts-tlg"
+      >
+        <img src="images/svg/telegram.svg" alt="Telegram" />
+      </a>
+    </footer>
   </body>
 </html>

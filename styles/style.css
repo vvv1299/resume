@@ -1,5 +1,5 @@
 body {
-  font-family: "Lobster";
+  font-family: "Times New Roman";
   font-size: 30px;
   line-height: 30px;
   background-color: #0f2b6c;
@@ -21,12 +21,14 @@ a {
 
 .navigation-link,
 .contacts-link {
-  font-family: "Times New Roman", cursive;
-  line-height: 20px;
-  font-weight: 700;
   color: inherit;
   text-align: center;
   text-decoration: none;
+}
+
+.navigation-link, h1, h2, h3 {
+  font-family: "Lobster";
+  font-weight: 700;
 }
 
 .navigation-link {
@@ -64,22 +66,6 @@ a {
 
 .skills-level-ok {
   background-color: green;
-}
-
-.contacts-vk {
-  background-image: url("./images/svg/vk.svg");
-  background-repeat: no-repeat;
-  padding-top: 65px;
-}
-
-.contacts-wa {
-  background-image: url("../images/svg/whatsapp.svg");
-  background-repeat: no-repeat;
-}
-
-.contacts-tlg {
-  background-image: url("../images/svg/telegram.svg");
-  background-repeat: no-repeat;
 }
 
 .navigation-list,

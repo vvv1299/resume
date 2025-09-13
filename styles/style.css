@@ -113,6 +113,10 @@ th {
   margin: 0;
 }
 
+.about, .skills, .educations, .experience, .portfolio{
+  margin-bottom: 50px
+}
+
 .avatar-social {
   width: 430px;
 }
@@ -248,6 +252,7 @@ footer {
   justify-content: space-between;
   width: 1641px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .footer-social {

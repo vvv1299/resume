@@ -1,7 +1,9 @@
+"use strict";
+
 let upButton = document.querySelector('.up-button');
 
 window.onscroll = function () {
-  if (window.pageYOffset > 50) {
+  if (window.pageYOffset > 750) {
     console.log(window.pageYOffset);
     upButton.classList.add('shown');
   } else {

@@ -2,6 +2,10 @@ html {
   height: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   font-family: "Times New Roman";
   font-size: 30px;
@@ -306,16 +310,15 @@ footer {
   border-radius: 50%;
   display: none;
   cursor: pointer;
-  color: #6653d9;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-color: #6653d9;
-  outline-color: #b6aaff;
+  color: #3663a4;
+  background-color: #dffeff;
+  border-color: #3663a4;
 }
 
 .up-button:hover {
-  color: #473c8d;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-color: #473c8d;
+  color: #dffeff;
+  background-color: #3663a4;
+  border-color: #dffeff;
 }
 
 .shown {

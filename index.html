@@ -339,18 +339,19 @@
         </section>
         <section class="portfolio" id="main-portfolio">
           <h2>Портфолио</h2>
-          <select class="select-control" aria-label="Сортировка">
+          <!--<select class="select-control" aria-label="Сортировка">
             <option value="all">Все проекты</option>
             <option value="frontend">Фронтенд</option>
+          </select>-->
+          <select class="filter" name="news-filter">
+            <option value="all" selected>Все проекты</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="design">Дизайн</option>
           </select>
-          <a href="#" class="button button-light">
-            <span class="visually-hidden">Показать список</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
+  
           <ul class="portfolio-list">
-            <li class="portfolio-card">
+            <li class="portfolio-card" data-category="frontend">
               <a
                 class="portfolio-card-link"
                 href="https://vvv1299.github.io/sedona/"
@@ -363,7 +364,6 @@
                 />
                 <h3 class="portfolio-card-title">Поездка в Седону</h3>
               </a>
-              <p class="card-category">Фронтенд</p>
               <b class="portfolio-card-data">[месяц]-2025г</b>
               <p>Сайт туристического городка в штате Аризона.</p>
               <p>
@@ -381,7 +381,7 @@
                 >.
               </p>
             </li>
-            <li class="portfolio-card">
+            <li class="portfolio-card" data-category="">
               <a class="portfolio-card-link" href="#" target="_blank">
                 <img
                   class="portfolio-card-image"
@@ -390,7 +390,6 @@
                 />
                 <h3 class="portfolio-card-title">[Название]</h3>
               </a>
-              <p class="card-category">[Категория]</p>
               <b class="portfolio-card-data">[месяц-год]</b>
               <p>[Описание]</p>
             </li>
@@ -472,10 +471,11 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/up-button.js"></script>
     <button class="up-button" type="button">
       ↑
       <span class="visually-hidden">Наверх</span>
     </button>
+    <script src="scripts/up-button.js"></script>
+    <script src="scripts/filter.js"></script>
   </body>
 </html>

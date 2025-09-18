@@ -26,6 +26,15 @@ body {
 
 a {
   text-decoration: none;
+  color: #feceff;
+}
+
+a:hover {
+  color: #dbfafc;
+}
+
+a:visited {
+  color: inherit;
 }
 
 .visually-hidden {
@@ -50,19 +59,29 @@ a {
 .page-header-logo {
   border-radius: 50%;
   display: block;
+  margin-right: 200px;
 }
 
 .navigation {
   display: flex;
-  width: 940px;
-  /*width: 1728px;*/
+  width: 1200px;
   margin: 0 auto;
 }
 
 .navigation-list {
-  width: 430px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin: auto 0;
+}
+
+.navigation-item {
+  margin-right: 135px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
 }
 
 .navigation-link,
@@ -113,8 +132,14 @@ th {
   margin: 0;
 }
 
-.about, .skills, .educations, .experience, .portfolio{
-  margin-bottom: 50px
+.about,
+.skills,
+.educations,
+.experience,
+.portfolio,
+.prices,
+footer {
+  margin-bottom: 50px;
 }
 
 .avatar-social {
@@ -189,7 +214,6 @@ th {
   list-style-type: none;
   padding-top: 56px;
   padding-bottom: 56px;
-
 }
 
 .gallery ol {
@@ -201,24 +225,11 @@ th {
 .slider-button {
   width: 90px;
   height: 90px;
-  margin:auto 0;
+  margin: auto 0;
 }
 
-.slider-division-item{
+.slider-division-item {
   text-align: center;
-}
-
-.exp-job {
-  text-decoration: none;
-  color: #feceff;
-}
-
-.exp-job:hover {
-  color: #dbfafc;
-}
-
-.exp-job:visited {
-  color: inherit;
 }
 
 .navigation-list,
@@ -236,9 +247,16 @@ th {
   list-style-type: none;
 }
 
+.portfolio-card-link h3:hover {
+  color: #dbfafc;
+}
+
+.portfolio-card-link h3:visited {
+  color: inherit;
+}
+
 .portfolio-card {
   width: 814px;
-  height: 751px;
   margin-bottom: 43px;
 }
 
@@ -252,7 +270,6 @@ footer {
   justify-content: space-between;
   width: 1641px;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 .footer-social {
@@ -266,4 +283,41 @@ footer {
 .footer-contacts {
   margin: auto 0;
   font-size: 20px;
+}
+
+.priceTabl {
+  margin: 0 auto;
+  width: 950px;
+}
+
+.up-button {
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 75px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  color: #6653d9;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: #6653d9;
+  outline-color: #b6aaff;
+}
+
+.up-button:hover {
+  color: #473c8d;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: #473c8d;
+}
+
+.shown {
+  display: inline-block;
 }
